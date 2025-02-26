@@ -1,0 +1,3 @@
+2025-02-26 15:36:35,572:WARNING:C:\Users\tufas\AppData\Local\Temp\ipykernel_19572\3826737563.py:7: SyntaxWarning: invalid escape sequence '\T'
+  data = pd.read_csv("D:\Term_Project\pm_2.5\pm2_5.csv")
+
