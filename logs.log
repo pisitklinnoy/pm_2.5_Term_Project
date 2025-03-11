@@ -1,3 +1,1624 @@
 2025-02-26 15:36:35,572:WARNING:C:\Users\tufas\AppData\Local\Temp\ipykernel_19572\3826737563.py:7: SyntaxWarning: invalid escape sequence '\T'
   data = pd.read_csv("D:\Term_Project\pm_2.5\pm2_5.csv")
 
+2025-03-11 18:25:02,778:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 18:25:02,778:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 18:25:02,778:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 18:25:02,778:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 18:28:00,348:INFO:PyCaret RegressionExperiment
+2025-03-11 18:28:00,348:INFO:Logging name: reg-default-name
+2025-03-11 18:28:00,348:INFO:ML Usecase: MLUsecase.REGRESSION
+2025-03-11 18:28:00,348:INFO:version 3.3.2
+2025-03-11 18:28:00,348:INFO:Initializing setup()
+2025-03-11 18:28:00,348:INFO:self.USI: 125b
+2025-03-11 18:28:00,348:INFO:self._variable_keys: {'pipeline', 'data', 'transform_target_param', 'y', 'log_plots_param', 'n_jobs_param', 'idx', 'gpu_param', '_available_plots', 'fold_shuffle_param', 'exp_name_log', '_ml_usecase', 'X_test', 'target_param', 'memory', 'X', 'fold_groups_param', 'gpu_n_jobs_param', 'y_test', 'exp_id', 'html_param', 'y_train', 'seed', 'USI', 'X_train', 'fold_generator', 'logging_param'}
+2025-03-11 18:28:00,348:INFO:Checking environment
+2025-03-11 18:28:00,348:INFO:python_version: 3.11.7
+2025-03-11 18:28:00,348:INFO:python_build: ('tags/v3.11.7:fa7a6f2', 'Dec  4 2023 19:24:49')
+2025-03-11 18:28:00,348:INFO:machine: AMD64
+2025-03-11 18:28:00,348:INFO:platform: Windows-10-10.0.22631-SP0
+2025-03-11 18:28:00,353:INFO:Memory: svmem(total=16452980736, available=7376457728, percent=55.2, used=9076523008, free=7376457728)
+2025-03-11 18:28:00,353:INFO:Physical Core: 6
+2025-03-11 18:28:00,353:INFO:Logical Core: 12
+2025-03-11 18:28:00,353:INFO:Checking libraries
+2025-03-11 18:28:00,353:INFO:System:
+2025-03-11 18:28:00,353:INFO:    python: 3.11.7 (tags/v3.11.7:fa7a6f2, Dec  4 2023, 19:24:49) [MSC v.1937 64 bit (AMD64)]
+2025-03-11 18:28:00,353:INFO:executable: c:\Users\tufas\AppData\Local\Programs\Python\Python311\python.exe
+2025-03-11 18:28:00,353:INFO:   machine: Windows-10-10.0.22631-SP0
+2025-03-11 18:28:00,353:INFO:PyCaret required dependencies:
+2025-03-11 18:28:00,450:INFO:                 pip: 23.2.1
+2025-03-11 18:28:00,450:INFO:          setuptools: 65.5.0
+2025-03-11 18:28:00,450:INFO:             pycaret: 3.3.2
+2025-03-11 18:28:00,450:INFO:             IPython: 9.0.2
+2025-03-11 18:28:00,450:INFO:          ipywidgets: 8.1.5
+2025-03-11 18:28:00,450:INFO:                tqdm: 4.67.1
+2025-03-11 18:28:00,450:INFO:               numpy: 1.26.4
+2025-03-11 18:28:00,450:INFO:              pandas: 2.1.4
+2025-03-11 18:28:00,450:INFO:              jinja2: 3.1.6
+2025-03-11 18:28:00,450:INFO:               scipy: 1.11.4
+2025-03-11 18:28:00,450:INFO:              joblib: 1.3.2
+2025-03-11 18:28:00,450:INFO:             sklearn: 1.4.2
+2025-03-11 18:28:00,450:INFO:                pyod: 2.0.3
+2025-03-11 18:28:00,450:INFO:            imblearn: 0.13.0
+2025-03-11 18:28:00,450:INFO:   category_encoders: 2.7.0
+2025-03-11 18:28:00,450:INFO:            lightgbm: 4.6.0
+2025-03-11 18:28:00,450:INFO:               numba: 0.61.0
+2025-03-11 18:28:00,450:INFO:            requests: 2.32.3
+2025-03-11 18:28:00,450:INFO:          matplotlib: 3.7.5
+2025-03-11 18:28:00,451:INFO:          scikitplot: 0.3.7
+2025-03-11 18:28:00,451:INFO:         yellowbrick: 1.5
+2025-03-11 18:28:00,451:INFO:              plotly: 5.24.1
+2025-03-11 18:28:00,451:INFO:    plotly-resampler: Not installed
+2025-03-11 18:28:00,451:INFO:             kaleido: 0.2.1
+2025-03-11 18:28:00,451:INFO:           schemdraw: 0.15
+2025-03-11 18:28:00,451:INFO:         statsmodels: 0.14.4
+2025-03-11 18:28:00,451:INFO:              sktime: 0.26.0
+2025-03-11 18:28:00,451:INFO:               tbats: 1.1.3
+2025-03-11 18:28:00,451:INFO:            pmdarima: 2.0.4
+2025-03-11 18:28:00,451:INFO:              psutil: 7.0.0
+2025-03-11 18:28:00,451:INFO:          markupsafe: 3.0.2
+2025-03-11 18:28:00,451:INFO:             pickle5: Not installed
+2025-03-11 18:28:00,451:INFO:         cloudpickle: 3.1.1
+2025-03-11 18:28:00,451:INFO:         deprecation: 2.1.0
+2025-03-11 18:28:00,451:INFO:              xxhash: 3.5.0
+2025-03-11 18:28:00,451:INFO:           wurlitzer: Not installed
+2025-03-11 18:28:00,451:INFO:PyCaret optional dependencies:
+2025-03-11 18:28:00,468:INFO:                shap: 0.47.0
+2025-03-11 18:28:00,468:INFO:           interpret: Not installed
+2025-03-11 18:28:00,468:INFO:                umap: Not installed
+2025-03-11 18:28:00,468:INFO:     ydata_profiling: Not installed
+2025-03-11 18:28:00,468:INFO:  explainerdashboard: Not installed
+2025-03-11 18:28:00,468:INFO:             autoviz: Not installed
+2025-03-11 18:28:00,468:INFO:           fairlearn: Not installed
+2025-03-11 18:28:00,468:INFO:          deepchecks: Not installed
+2025-03-11 18:28:00,468:INFO:             xgboost: Not installed
+2025-03-11 18:28:00,468:INFO:            catboost: Not installed
+2025-03-11 18:28:00,468:INFO:              kmodes: Not installed
+2025-03-11 18:28:00,468:INFO:             mlxtend: Not installed
+2025-03-11 18:28:00,468:INFO:       statsforecast: Not installed
+2025-03-11 18:28:00,468:INFO:        tune_sklearn: Not installed
+2025-03-11 18:28:00,468:INFO:                 ray: Not installed
+2025-03-11 18:28:00,468:INFO:            hyperopt: Not installed
+2025-03-11 18:28:00,468:INFO:              optuna: Not installed
+2025-03-11 18:28:00,468:INFO:               skopt: Not installed
+2025-03-11 18:28:00,468:INFO:              mlflow: Not installed
+2025-03-11 18:28:00,469:INFO:              gradio: Not installed
+2025-03-11 18:28:00,469:INFO:             fastapi: Not installed
+2025-03-11 18:28:00,469:INFO:             uvicorn: Not installed
+2025-03-11 18:28:00,469:INFO:              m2cgen: Not installed
+2025-03-11 18:28:00,469:INFO:           evidently: Not installed
+2025-03-11 18:28:00,469:INFO:               fugue: Not installed
+2025-03-11 18:28:00,469:INFO:           streamlit: Not installed
+2025-03-11 18:28:00,469:INFO:             prophet: Not installed
+2025-03-11 18:28:00,469:INFO:None
+2025-03-11 18:28:00,469:INFO:Set up data.
+2025-03-11 18:28:00,477:INFO:Set up folding strategy.
+2025-03-11 18:28:00,478:INFO:Set up train/test split.
+2025-03-11 18:28:00,484:INFO:Set up index.
+2025-03-11 18:28:00,485:INFO:Assigning column types.
+2025-03-11 18:28:00,491:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2025-03-11 18:28:00,491:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,494:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,498:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,551:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,585:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,586:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:00,586:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:00,586:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,589:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,593:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,641:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,674:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,674:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:00,674:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:00,674:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2025-03-11 18:28:00,678:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,681:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,725:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,758:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,758:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:00,758:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:00,762:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,765:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,816:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,858:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,859:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:00,859:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:00,859:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2025-03-11 18:28:00,870:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,930:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,969:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:28:00,970:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:00,970:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:00,980:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-11 18:28:01,034:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:28:01,072:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:28:01,072:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,072:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,074:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2025-03-11 18:28:01,138:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:28:01,193:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:28:01,193:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,193:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,257:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:28:01,297:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:28:01,298:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,298:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,298:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2025-03-11 18:28:01,358:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:28:01,394:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,394:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,455:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:28:01,492:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,492:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,492:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2025-03-11 18:28:01,590:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,592:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,686:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,686:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,689:INFO:Preparing preprocessing pipeline...
+2025-03-11 18:28:01,689:INFO:Set up date feature engineering.
+2025-03-11 18:28:01,689:INFO:Set up simple imputation.
+2025-03-11 18:28:01,689:INFO:Set up feature normalization.
+2025-03-11 18:28:01,689:INFO:Set up feature selection.
+2025-03-11 18:28:01,783:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:01,783:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:02,576:INFO:Finished creating preprocessing pipeline.
+2025-03-11 18:28:02,588:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\tufas\AppData\Local\Temp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['datetime'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['humidity', 'temperature',
+                                             'pm_2_5_lag_1', 'pm_2_5_lag_3',
+                                             'pm_2_5_lag_6', 'pm_2_5_lag_24'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('feature_selection',
+                 TransformerWrapper(exclude=[],
+                                    transformer=SelectFromModel(estimator=LGBMRegressor(),
+                                                                max_features=1,
+                                                                threshold=-inf)))])
+2025-03-11 18:28:02,588:INFO:Creating final display dataframe.
+2025-03-11 18:28:02,772:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target            pm_2_5
+2                   Target type        Regression
+3           Original data shape        (34646, 8)
+4        Transformed data shape        (34646, 2)
+5   Transformed train set shape        (27716, 2)
+6    Transformed test set shape         (6930, 2)
+7              Numeric features                 6
+8                 Date features                 1
+9      Rows with missing values             60.7%
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14                    Normalize              True
+15             Normalize method            zscore
+16            Feature selection              True
+17     Feature selection method           classic
+18  Feature selection estimator          lightgbm
+19  Number of features selected               0.2
+20               Fold Generator             KFold
+21                  Fold Number                10
+22                     CPU Jobs                -1
+23                      Use GPU             False
+24               Log Experiment             False
+25              Experiment Name  reg-default-name
+26                          USI              125b
+2025-03-11 18:28:02,891:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:02,891:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:02,994:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:02,996:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:28:02,996:INFO:setup() successfully completed in 2.65s...............
+2025-03-11 18:28:02,997:INFO:Initializing create_model()
+2025-03-11 18:28:02,997:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CB0E738D0>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-11 18:28:02,997:INFO:Checking exceptions
+2025-03-11 18:28:03,019:INFO:Importing libraries
+2025-03-11 18:28:03,019:INFO:Copying training dataset
+2025-03-11 18:28:03,039:INFO:Defining folds
+2025-03-11 18:28:03,040:INFO:Declaring metric variables
+2025-03-11 18:28:03,046:INFO:Importing untrained model
+2025-03-11 18:28:03,051:INFO:Random Forest Regressor Imported successfully
+2025-03-11 18:28:03,067:INFO:Starting cross validation
+2025-03-11 18:28:03,109:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-11 18:28:13,412:INFO:Calculating mean and std
+2025-03-11 18:28:13,414:INFO:Creating metrics dataframe
+2025-03-11 18:28:13,421:INFO:Finalizing model
+2025-03-11 18:28:13,481:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000413 seconds.
+2025-03-11 18:28:13,481:INFO:You can set `force_col_wise=true` to remove the overhead.
+2025-03-11 18:28:13,481:INFO:[LightGBM] [Info] Total Bins 1530
+2025-03-11 18:28:13,481:INFO:[LightGBM] [Info] Number of data points in the train set: 27716, number of used features: 6
+2025-03-11 18:28:13,482:INFO:[LightGBM] [Info] Start training from score 12.592952
+2025-03-11 18:28:14,135:INFO:Uploading results into container
+2025-03-11 18:28:14,136:INFO:Uploading model into container now
+2025-03-11 18:28:14,145:INFO:_master_model_container: 1
+2025-03-11 18:28:14,146:INFO:_display_container: 2
+2025-03-11 18:28:14,146:INFO:RandomForestRegressor(n_jobs=-1, random_state=42)
+2025-03-11 18:28:14,146:INFO:create_model() successfully completed......................................
+2025-03-11 18:28:14,259:INFO:Initializing predict_model()
+2025-03-11 18:28:14,259:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CB0E738D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CFCF3D260>)
+2025-03-11 18:28:14,259:INFO:Checking exceptions
+2025-03-11 18:28:14,259:INFO:Preloading libraries
+2025-03-11 18:28:14,262:INFO:Set up data.
+2025-03-11 18:28:14,264:INFO:Set up index.
+2025-03-11 18:29:54,926:INFO:PyCaret RegressionExperiment
+2025-03-11 18:29:54,926:INFO:Logging name: reg-default-name
+2025-03-11 18:29:54,926:INFO:ML Usecase: MLUsecase.REGRESSION
+2025-03-11 18:29:54,926:INFO:version 3.3.2
+2025-03-11 18:29:54,926:INFO:Initializing setup()
+2025-03-11 18:29:54,926:INFO:self.USI: 97c3
+2025-03-11 18:29:54,926:INFO:self._variable_keys: {'pipeline', 'data', 'transform_target_param', 'y', 'log_plots_param', 'n_jobs_param', 'idx', 'gpu_param', '_available_plots', 'fold_shuffle_param', 'exp_name_log', '_ml_usecase', 'X_test', 'target_param', 'memory', 'X', 'fold_groups_param', 'gpu_n_jobs_param', 'y_test', 'exp_id', 'html_param', 'y_train', 'seed', 'USI', 'X_train', 'fold_generator', 'logging_param'}
+2025-03-11 18:29:54,927:INFO:Checking environment
+2025-03-11 18:29:54,927:INFO:python_version: 3.11.7
+2025-03-11 18:29:54,927:INFO:python_build: ('tags/v3.11.7:fa7a6f2', 'Dec  4 2023 19:24:49')
+2025-03-11 18:29:54,927:INFO:machine: AMD64
+2025-03-11 18:29:54,927:INFO:platform: Windows-10-10.0.22631-SP0
+2025-03-11 18:29:54,933:INFO:Memory: svmem(total=16452980736, available=4885495808, percent=70.3, used=11567484928, free=4885495808)
+2025-03-11 18:29:54,933:INFO:Physical Core: 6
+2025-03-11 18:29:54,933:INFO:Logical Core: 12
+2025-03-11 18:29:54,933:INFO:Checking libraries
+2025-03-11 18:29:54,933:INFO:System:
+2025-03-11 18:29:54,933:INFO:    python: 3.11.7 (tags/v3.11.7:fa7a6f2, Dec  4 2023, 19:24:49) [MSC v.1937 64 bit (AMD64)]
+2025-03-11 18:29:54,933:INFO:executable: c:\Users\tufas\AppData\Local\Programs\Python\Python311\python.exe
+2025-03-11 18:29:54,933:INFO:   machine: Windows-10-10.0.22631-SP0
+2025-03-11 18:29:54,933:INFO:PyCaret required dependencies:
+2025-03-11 18:29:54,933:INFO:                 pip: 23.2.1
+2025-03-11 18:29:54,933:INFO:          setuptools: 65.5.0
+2025-03-11 18:29:54,933:INFO:             pycaret: 3.3.2
+2025-03-11 18:29:54,933:INFO:             IPython: 9.0.2
+2025-03-11 18:29:54,933:INFO:          ipywidgets: 8.1.5
+2025-03-11 18:29:54,933:INFO:                tqdm: 4.67.1
+2025-03-11 18:29:54,933:INFO:               numpy: 1.26.4
+2025-03-11 18:29:54,933:INFO:              pandas: 2.1.4
+2025-03-11 18:29:54,934:INFO:              jinja2: 3.1.6
+2025-03-11 18:29:54,934:INFO:               scipy: 1.11.4
+2025-03-11 18:29:54,934:INFO:              joblib: 1.3.2
+2025-03-11 18:29:54,934:INFO:             sklearn: 1.4.2
+2025-03-11 18:29:54,934:INFO:                pyod: 2.0.3
+2025-03-11 18:29:54,934:INFO:            imblearn: 0.13.0
+2025-03-11 18:29:54,934:INFO:   category_encoders: 2.7.0
+2025-03-11 18:29:54,934:INFO:            lightgbm: 4.6.0
+2025-03-11 18:29:54,934:INFO:               numba: 0.61.0
+2025-03-11 18:29:54,934:INFO:            requests: 2.32.3
+2025-03-11 18:29:54,934:INFO:          matplotlib: 3.7.5
+2025-03-11 18:29:54,934:INFO:          scikitplot: 0.3.7
+2025-03-11 18:29:54,934:INFO:         yellowbrick: 1.5
+2025-03-11 18:29:54,934:INFO:              plotly: 5.24.1
+2025-03-11 18:29:54,934:INFO:    plotly-resampler: Not installed
+2025-03-11 18:29:54,934:INFO:             kaleido: 0.2.1
+2025-03-11 18:29:54,934:INFO:           schemdraw: 0.15
+2025-03-11 18:29:54,934:INFO:         statsmodels: 0.14.4
+2025-03-11 18:29:54,934:INFO:              sktime: 0.26.0
+2025-03-11 18:29:54,934:INFO:               tbats: 1.1.3
+2025-03-11 18:29:54,934:INFO:            pmdarima: 2.0.4
+2025-03-11 18:29:54,934:INFO:              psutil: 7.0.0
+2025-03-11 18:29:54,934:INFO:          markupsafe: 3.0.2
+2025-03-11 18:29:54,934:INFO:             pickle5: Not installed
+2025-03-11 18:29:54,934:INFO:         cloudpickle: 3.1.1
+2025-03-11 18:29:54,934:INFO:         deprecation: 2.1.0
+2025-03-11 18:29:54,934:INFO:              xxhash: 3.5.0
+2025-03-11 18:29:54,934:INFO:           wurlitzer: Not installed
+2025-03-11 18:29:54,934:INFO:PyCaret optional dependencies:
+2025-03-11 18:29:54,934:INFO:                shap: 0.47.0
+2025-03-11 18:29:54,934:INFO:           interpret: Not installed
+2025-03-11 18:29:54,934:INFO:                umap: Not installed
+2025-03-11 18:29:54,934:INFO:     ydata_profiling: Not installed
+2025-03-11 18:29:54,934:INFO:  explainerdashboard: Not installed
+2025-03-11 18:29:54,934:INFO:             autoviz: Not installed
+2025-03-11 18:29:54,934:INFO:           fairlearn: Not installed
+2025-03-11 18:29:54,934:INFO:          deepchecks: Not installed
+2025-03-11 18:29:54,935:INFO:             xgboost: Not installed
+2025-03-11 18:29:54,935:INFO:            catboost: Not installed
+2025-03-11 18:29:54,935:INFO:              kmodes: Not installed
+2025-03-11 18:29:54,935:INFO:             mlxtend: Not installed
+2025-03-11 18:29:54,935:INFO:       statsforecast: Not installed
+2025-03-11 18:29:54,935:INFO:        tune_sklearn: Not installed
+2025-03-11 18:29:54,935:INFO:                 ray: Not installed
+2025-03-11 18:29:54,935:INFO:            hyperopt: Not installed
+2025-03-11 18:29:54,935:INFO:              optuna: Not installed
+2025-03-11 18:29:54,935:INFO:               skopt: Not installed
+2025-03-11 18:29:54,935:INFO:              mlflow: Not installed
+2025-03-11 18:29:54,935:INFO:              gradio: Not installed
+2025-03-11 18:29:54,935:INFO:             fastapi: Not installed
+2025-03-11 18:29:54,935:INFO:             uvicorn: Not installed
+2025-03-11 18:29:54,935:INFO:              m2cgen: Not installed
+2025-03-11 18:29:54,935:INFO:           evidently: Not installed
+2025-03-11 18:29:54,935:INFO:               fugue: Not installed
+2025-03-11 18:29:54,935:INFO:           streamlit: Not installed
+2025-03-11 18:29:54,935:INFO:             prophet: Not installed
+2025-03-11 18:29:54,935:INFO:None
+2025-03-11 18:29:54,935:INFO:Set up data.
+2025-03-11 18:29:54,943:INFO:Set up folding strategy.
+2025-03-11 18:29:54,943:INFO:Set up train/test split.
+2025-03-11 18:29:54,949:INFO:Set up index.
+2025-03-11 18:29:54,949:INFO:Assigning column types.
+2025-03-11 18:29:54,957:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2025-03-11 18:29:54,957:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2025-03-11 18:29:54,960:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-03-11 18:29:54,964:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,012:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,046:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,047:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,047:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,048:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,052:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,055:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,106:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,140:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,140:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,140:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,141:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2025-03-11 18:29:55,146:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,149:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,197:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,232:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,233:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,233:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,237:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,240:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,288:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,322:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,322:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,322:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,322:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2025-03-11 18:29:55,329:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,384:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,428:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,429:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,430:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,439:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,493:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,526:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,528:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,528:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,528:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2025-03-11 18:29:55,582:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,615:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,615:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,615:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,671:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,706:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,707:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,707:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,707:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2025-03-11 18:29:55,767:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,802:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,802:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,857:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-11 18:29:55,894:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,894:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,894:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2025-03-11 18:29:55,982:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:55,982:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:56,071:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:56,071:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:56,072:INFO:Preparing preprocessing pipeline...
+2025-03-11 18:29:56,072:INFO:Set up date feature engineering.
+2025-03-11 18:29:56,072:INFO:Set up simple imputation.
+2025-03-11 18:29:56,073:INFO:Set up feature normalization.
+2025-03-11 18:29:56,073:INFO:Set up feature selection.
+2025-03-11 18:29:56,160:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:56,160:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:56,316:INFO:Finished creating preprocessing pipeline.
+2025-03-11 18:29:56,327:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\tufas\AppData\Local\Temp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['datetime'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['humidity', 'temperature',
+                                             'pm_2_5_lag_1', 'pm_2_5_lag_3',
+                                             'pm_2_5_lag_6', 'pm_2_5_lag_24'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('feature_selection',
+                 TransformerWrapper(exclude=[],
+                                    transformer=SelectFromModel(estimator=LGBMRegressor(),
+                                                                max_features=1,
+                                                                threshold=-inf)))])
+2025-03-11 18:29:56,327:INFO:Creating final display dataframe.
+2025-03-11 18:29:56,513:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target            pm_2_5
+2                   Target type        Regression
+3           Original data shape        (34465, 8)
+4        Transformed data shape        (34465, 2)
+5   Transformed train set shape        (27572, 2)
+6    Transformed test set shape         (6893, 2)
+7              Numeric features                 6
+8                 Date features                 1
+9      Rows with missing values              0.1%
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14                    Normalize              True
+15             Normalize method            zscore
+16            Feature selection              True
+17     Feature selection method           classic
+18  Feature selection estimator          lightgbm
+19  Number of features selected               0.2
+20               Fold Generator             KFold
+21                  Fold Number                10
+22                     CPU Jobs                -1
+23                      Use GPU             False
+24               Log Experiment             False
+25              Experiment Name  reg-default-name
+26                          USI              97c3
+2025-03-11 18:29:56,626:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:56,626:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:56,713:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:56,713:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-03-11 18:29:56,714:INFO:setup() successfully completed in 1.79s...............
+2025-03-11 18:29:56,714:INFO:Initializing create_model()
+2025-03-11 18:29:56,714:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-11 18:29:56,714:INFO:Checking exceptions
+2025-03-11 18:29:56,724:INFO:Importing libraries
+2025-03-11 18:29:56,724:INFO:Copying training dataset
+2025-03-11 18:29:56,738:INFO:Defining folds
+2025-03-11 18:29:56,738:INFO:Declaring metric variables
+2025-03-11 18:29:56,742:INFO:Importing untrained model
+2025-03-11 18:29:56,746:INFO:Random Forest Regressor Imported successfully
+2025-03-11 18:29:56,752:INFO:Starting cross validation
+2025-03-11 18:29:56,759:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-11 18:30:03,066:INFO:Calculating mean and std
+2025-03-11 18:30:03,069:INFO:Creating metrics dataframe
+2025-03-11 18:30:03,076:INFO:Finalizing model
+2025-03-11 18:30:03,128:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000194 seconds.
+2025-03-11 18:30:03,128:INFO:You can set `force_row_wise=true` to remove the overhead.
+2025-03-11 18:30:03,128:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2025-03-11 18:30:03,129:INFO:[LightGBM] [Info] Total Bins 1581
+2025-03-11 18:30:03,129:INFO:[LightGBM] [Info] Number of data points in the train set: 27572, number of used features: 9
+2025-03-11 18:30:03,129:INFO:[LightGBM] [Info] Start training from score 12.941168
+2025-03-11 18:30:03,684:INFO:Uploading results into container
+2025-03-11 18:30:03,685:INFO:Uploading model into container now
+2025-03-11 18:30:03,692:INFO:_master_model_container: 1
+2025-03-11 18:30:03,692:INFO:_display_container: 2
+2025-03-11 18:30:03,693:INFO:RandomForestRegressor(n_jobs=-1, random_state=42)
+2025-03-11 18:30:03,693:INFO:create_model() successfully completed......................................
+2025-03-11 18:30:03,818:INFO:Initializing predict_model()
+2025-03-11 18:30:03,818:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:03,818:INFO:Checking exceptions
+2025-03-11 18:30:03,818:INFO:Preloading libraries
+2025-03-11 18:30:03,819:INFO:Set up data.
+2025-03-11 18:30:03,822:INFO:Set up index.
+2025-03-11 18:30:03,993:INFO:Initializing predict_model()
+2025-03-11 18:30:03,993:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:03,993:INFO:Checking exceptions
+2025-03-11 18:30:03,993:INFO:Preloading libraries
+2025-03-11 18:30:03,996:INFO:Set up data.
+2025-03-11 18:30:03,999:INFO:Set up index.
+2025-03-11 18:30:04,164:INFO:Initializing predict_model()
+2025-03-11 18:30:04,165:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:04,165:INFO:Checking exceptions
+2025-03-11 18:30:04,165:INFO:Preloading libraries
+2025-03-11 18:30:04,167:INFO:Set up data.
+2025-03-11 18:30:04,169:INFO:Set up index.
+2025-03-11 18:30:04,347:INFO:Initializing predict_model()
+2025-03-11 18:30:04,347:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:04,347:INFO:Checking exceptions
+2025-03-11 18:30:04,347:INFO:Preloading libraries
+2025-03-11 18:30:04,348:INFO:Set up data.
+2025-03-11 18:30:04,351:INFO:Set up index.
+2025-03-11 18:30:04,525:INFO:Initializing predict_model()
+2025-03-11 18:30:04,526:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:04,526:INFO:Checking exceptions
+2025-03-11 18:30:04,526:INFO:Preloading libraries
+2025-03-11 18:30:04,527:INFO:Set up data.
+2025-03-11 18:30:04,529:INFO:Set up index.
+2025-03-11 18:30:04,712:INFO:Initializing predict_model()
+2025-03-11 18:30:04,712:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:04,712:INFO:Checking exceptions
+2025-03-11 18:30:04,712:INFO:Preloading libraries
+2025-03-11 18:30:04,714:INFO:Set up data.
+2025-03-11 18:30:04,717:INFO:Set up index.
+2025-03-11 18:30:04,892:INFO:Initializing predict_model()
+2025-03-11 18:30:04,892:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:04,892:INFO:Checking exceptions
+2025-03-11 18:30:04,892:INFO:Preloading libraries
+2025-03-11 18:30:04,895:INFO:Set up data.
+2025-03-11 18:30:04,898:INFO:Set up index.
+2025-03-11 18:30:05,099:INFO:Initializing predict_model()
+2025-03-11 18:30:05,099:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:05,099:INFO:Checking exceptions
+2025-03-11 18:30:05,099:INFO:Preloading libraries
+2025-03-11 18:30:05,100:INFO:Set up data.
+2025-03-11 18:30:05,103:INFO:Set up index.
+2025-03-11 18:30:05,273:INFO:Initializing predict_model()
+2025-03-11 18:30:05,274:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:05,274:INFO:Checking exceptions
+2025-03-11 18:30:05,274:INFO:Preloading libraries
+2025-03-11 18:30:05,275:INFO:Set up data.
+2025-03-11 18:30:05,279:INFO:Set up index.
+2025-03-11 18:30:05,448:INFO:Initializing predict_model()
+2025-03-11 18:30:05,448:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:05,448:INFO:Checking exceptions
+2025-03-11 18:30:05,448:INFO:Preloading libraries
+2025-03-11 18:30:05,450:INFO:Set up data.
+2025-03-11 18:30:05,452:INFO:Set up index.
+2025-03-11 18:30:05,641:INFO:Initializing predict_model()
+2025-03-11 18:30:05,641:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:05,641:INFO:Checking exceptions
+2025-03-11 18:30:05,641:INFO:Preloading libraries
+2025-03-11 18:30:05,643:INFO:Set up data.
+2025-03-11 18:30:05,645:INFO:Set up index.
+2025-03-11 18:30:05,816:INFO:Initializing predict_model()
+2025-03-11 18:30:05,816:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:05,816:INFO:Checking exceptions
+2025-03-11 18:30:05,816:INFO:Preloading libraries
+2025-03-11 18:30:05,818:INFO:Set up data.
+2025-03-11 18:30:05,821:INFO:Set up index.
+2025-03-11 18:30:05,992:INFO:Initializing predict_model()
+2025-03-11 18:30:05,992:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:05,992:INFO:Checking exceptions
+2025-03-11 18:30:05,993:INFO:Preloading libraries
+2025-03-11 18:30:05,994:INFO:Set up data.
+2025-03-11 18:30:05,996:INFO:Set up index.
+2025-03-11 18:30:06,167:INFO:Initializing predict_model()
+2025-03-11 18:30:06,168:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:06,168:INFO:Checking exceptions
+2025-03-11 18:30:06,168:INFO:Preloading libraries
+2025-03-11 18:30:06,170:INFO:Set up data.
+2025-03-11 18:30:06,172:INFO:Set up index.
+2025-03-11 18:30:06,334:INFO:Initializing predict_model()
+2025-03-11 18:30:06,334:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:06,334:INFO:Checking exceptions
+2025-03-11 18:30:06,334:INFO:Preloading libraries
+2025-03-11 18:30:06,336:INFO:Set up data.
+2025-03-11 18:30:06,338:INFO:Set up index.
+2025-03-11 18:30:06,509:INFO:Initializing predict_model()
+2025-03-11 18:30:06,509:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:06,509:INFO:Checking exceptions
+2025-03-11 18:30:06,509:INFO:Preloading libraries
+2025-03-11 18:30:06,511:INFO:Set up data.
+2025-03-11 18:30:06,513:INFO:Set up index.
+2025-03-11 18:30:06,674:INFO:Initializing predict_model()
+2025-03-11 18:30:06,674:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:06,674:INFO:Checking exceptions
+2025-03-11 18:30:06,674:INFO:Preloading libraries
+2025-03-11 18:30:06,675:INFO:Set up data.
+2025-03-11 18:30:06,677:INFO:Set up index.
+2025-03-11 18:30:06,842:INFO:Initializing predict_model()
+2025-03-11 18:30:06,842:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:06,842:INFO:Checking exceptions
+2025-03-11 18:30:06,842:INFO:Preloading libraries
+2025-03-11 18:30:06,844:INFO:Set up data.
+2025-03-11 18:30:06,846:INFO:Set up index.
+2025-03-11 18:30:07,010:INFO:Initializing predict_model()
+2025-03-11 18:30:07,010:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:07,010:INFO:Checking exceptions
+2025-03-11 18:30:07,010:INFO:Preloading libraries
+2025-03-11 18:30:07,011:INFO:Set up data.
+2025-03-11 18:30:07,013:INFO:Set up index.
+2025-03-11 18:30:07,179:INFO:Initializing predict_model()
+2025-03-11 18:30:07,179:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:07,179:INFO:Checking exceptions
+2025-03-11 18:30:07,179:INFO:Preloading libraries
+2025-03-11 18:30:07,181:INFO:Set up data.
+2025-03-11 18:30:07,183:INFO:Set up index.
+2025-03-11 18:30:07,346:INFO:Initializing predict_model()
+2025-03-11 18:30:07,346:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:07,346:INFO:Checking exceptions
+2025-03-11 18:30:07,346:INFO:Preloading libraries
+2025-03-11 18:30:07,347:INFO:Set up data.
+2025-03-11 18:30:07,350:INFO:Set up index.
+2025-03-11 18:30:07,517:INFO:Initializing predict_model()
+2025-03-11 18:30:07,517:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:07,517:INFO:Checking exceptions
+2025-03-11 18:30:07,517:INFO:Preloading libraries
+2025-03-11 18:30:07,519:INFO:Set up data.
+2025-03-11 18:30:07,521:INFO:Set up index.
+2025-03-11 18:30:07,679:INFO:Initializing predict_model()
+2025-03-11 18:30:07,679:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:07,679:INFO:Checking exceptions
+2025-03-11 18:30:07,679:INFO:Preloading libraries
+2025-03-11 18:30:07,680:INFO:Set up data.
+2025-03-11 18:30:07,683:INFO:Set up index.
+2025-03-11 18:30:07,844:INFO:Initializing predict_model()
+2025-03-11 18:30:07,844:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:07,844:INFO:Checking exceptions
+2025-03-11 18:30:07,844:INFO:Preloading libraries
+2025-03-11 18:30:07,846:INFO:Set up data.
+2025-03-11 18:30:07,847:INFO:Set up index.
+2025-03-11 18:30:08,011:INFO:Initializing predict_model()
+2025-03-11 18:30:08,011:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:08,011:INFO:Checking exceptions
+2025-03-11 18:30:08,011:INFO:Preloading libraries
+2025-03-11 18:30:08,012:INFO:Set up data.
+2025-03-11 18:30:08,015:INFO:Set up index.
+2025-03-11 18:30:08,175:INFO:Initializing predict_model()
+2025-03-11 18:30:08,175:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:08,175:INFO:Checking exceptions
+2025-03-11 18:30:08,175:INFO:Preloading libraries
+2025-03-11 18:30:08,176:INFO:Set up data.
+2025-03-11 18:30:08,179:INFO:Set up index.
+2025-03-11 18:30:08,347:INFO:Initializing predict_model()
+2025-03-11 18:30:08,347:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:08,347:INFO:Checking exceptions
+2025-03-11 18:30:08,347:INFO:Preloading libraries
+2025-03-11 18:30:08,348:INFO:Set up data.
+2025-03-11 18:30:08,351:INFO:Set up index.
+2025-03-11 18:30:08,516:INFO:Initializing predict_model()
+2025-03-11 18:30:08,516:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:08,516:INFO:Checking exceptions
+2025-03-11 18:30:08,516:INFO:Preloading libraries
+2025-03-11 18:30:08,517:INFO:Set up data.
+2025-03-11 18:30:08,520:INFO:Set up index.
+2025-03-11 18:30:08,680:INFO:Initializing predict_model()
+2025-03-11 18:30:08,682:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:08,682:INFO:Checking exceptions
+2025-03-11 18:30:08,682:INFO:Preloading libraries
+2025-03-11 18:30:08,683:INFO:Set up data.
+2025-03-11 18:30:08,686:INFO:Set up index.
+2025-03-11 18:30:08,847:INFO:Initializing predict_model()
+2025-03-11 18:30:08,847:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:08,847:INFO:Checking exceptions
+2025-03-11 18:30:08,847:INFO:Preloading libraries
+2025-03-11 18:30:08,848:INFO:Set up data.
+2025-03-11 18:30:08,850:INFO:Set up index.
+2025-03-11 18:30:09,017:INFO:Initializing predict_model()
+2025-03-11 18:30:09,017:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:09,017:INFO:Checking exceptions
+2025-03-11 18:30:09,017:INFO:Preloading libraries
+2025-03-11 18:30:09,019:INFO:Set up data.
+2025-03-11 18:30:09,022:INFO:Set up index.
+2025-03-11 18:30:09,182:INFO:Initializing predict_model()
+2025-03-11 18:30:09,183:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:09,183:INFO:Checking exceptions
+2025-03-11 18:30:09,183:INFO:Preloading libraries
+2025-03-11 18:30:09,185:INFO:Set up data.
+2025-03-11 18:30:09,188:INFO:Set up index.
+2025-03-11 18:30:09,356:INFO:Initializing predict_model()
+2025-03-11 18:30:09,356:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:09,356:INFO:Checking exceptions
+2025-03-11 18:30:09,356:INFO:Preloading libraries
+2025-03-11 18:30:09,358:INFO:Set up data.
+2025-03-11 18:30:09,360:INFO:Set up index.
+2025-03-11 18:30:09,539:INFO:Initializing predict_model()
+2025-03-11 18:30:09,539:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:09,539:INFO:Checking exceptions
+2025-03-11 18:30:09,539:INFO:Preloading libraries
+2025-03-11 18:30:09,541:INFO:Set up data.
+2025-03-11 18:30:09,544:INFO:Set up index.
+2025-03-11 18:30:09,712:INFO:Initializing predict_model()
+2025-03-11 18:30:09,712:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:09,712:INFO:Checking exceptions
+2025-03-11 18:30:09,712:INFO:Preloading libraries
+2025-03-11 18:30:09,714:INFO:Set up data.
+2025-03-11 18:30:09,717:INFO:Set up index.
+2025-03-11 18:30:09,888:INFO:Initializing predict_model()
+2025-03-11 18:30:09,888:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:09,888:INFO:Checking exceptions
+2025-03-11 18:30:09,888:INFO:Preloading libraries
+2025-03-11 18:30:09,890:INFO:Set up data.
+2025-03-11 18:30:09,892:INFO:Set up index.
+2025-03-11 18:30:10,068:INFO:Initializing predict_model()
+2025-03-11 18:30:10,068:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:10,068:INFO:Checking exceptions
+2025-03-11 18:30:10,068:INFO:Preloading libraries
+2025-03-11 18:30:10,070:INFO:Set up data.
+2025-03-11 18:30:10,072:INFO:Set up index.
+2025-03-11 18:30:10,229:INFO:Initializing predict_model()
+2025-03-11 18:30:10,229:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:10,229:INFO:Checking exceptions
+2025-03-11 18:30:10,229:INFO:Preloading libraries
+2025-03-11 18:30:10,231:INFO:Set up data.
+2025-03-11 18:30:10,233:INFO:Set up index.
+2025-03-11 18:30:10,411:INFO:Initializing predict_model()
+2025-03-11 18:30:10,411:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:10,412:INFO:Checking exceptions
+2025-03-11 18:30:10,412:INFO:Preloading libraries
+2025-03-11 18:30:10,413:INFO:Set up data.
+2025-03-11 18:30:10,416:INFO:Set up index.
+2025-03-11 18:30:10,594:INFO:Initializing predict_model()
+2025-03-11 18:30:10,594:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:10,594:INFO:Checking exceptions
+2025-03-11 18:30:10,594:INFO:Preloading libraries
+2025-03-11 18:30:10,596:INFO:Set up data.
+2025-03-11 18:30:10,598:INFO:Set up index.
+2025-03-11 18:30:10,763:INFO:Initializing predict_model()
+2025-03-11 18:30:10,763:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:10,763:INFO:Checking exceptions
+2025-03-11 18:30:10,763:INFO:Preloading libraries
+2025-03-11 18:30:10,765:INFO:Set up data.
+2025-03-11 18:30:10,768:INFO:Set up index.
+2025-03-11 18:30:10,931:INFO:Initializing predict_model()
+2025-03-11 18:30:10,931:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:10,931:INFO:Checking exceptions
+2025-03-11 18:30:10,931:INFO:Preloading libraries
+2025-03-11 18:30:10,934:INFO:Set up data.
+2025-03-11 18:30:10,936:INFO:Set up index.
+2025-03-11 18:30:11,104:INFO:Initializing predict_model()
+2025-03-11 18:30:11,104:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:11,105:INFO:Checking exceptions
+2025-03-11 18:30:11,105:INFO:Preloading libraries
+2025-03-11 18:30:11,106:INFO:Set up data.
+2025-03-11 18:30:11,109:INFO:Set up index.
+2025-03-11 18:30:11,271:INFO:Initializing predict_model()
+2025-03-11 18:30:11,271:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:11,271:INFO:Checking exceptions
+2025-03-11 18:30:11,271:INFO:Preloading libraries
+2025-03-11 18:30:11,273:INFO:Set up data.
+2025-03-11 18:30:11,275:INFO:Set up index.
+2025-03-11 18:30:11,441:INFO:Initializing predict_model()
+2025-03-11 18:30:11,441:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:11,441:INFO:Checking exceptions
+2025-03-11 18:30:11,441:INFO:Preloading libraries
+2025-03-11 18:30:11,442:INFO:Set up data.
+2025-03-11 18:30:11,444:INFO:Set up index.
+2025-03-11 18:30:11,608:INFO:Initializing predict_model()
+2025-03-11 18:30:11,608:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:11,608:INFO:Checking exceptions
+2025-03-11 18:30:11,608:INFO:Preloading libraries
+2025-03-11 18:30:11,610:INFO:Set up data.
+2025-03-11 18:30:11,612:INFO:Set up index.
+2025-03-11 18:30:11,776:INFO:Initializing predict_model()
+2025-03-11 18:30:11,776:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:11,776:INFO:Checking exceptions
+2025-03-11 18:30:11,776:INFO:Preloading libraries
+2025-03-11 18:30:11,777:INFO:Set up data.
+2025-03-11 18:30:11,781:INFO:Set up index.
+2025-03-11 18:30:11,948:INFO:Initializing predict_model()
+2025-03-11 18:30:11,949:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:11,949:INFO:Checking exceptions
+2025-03-11 18:30:11,949:INFO:Preloading libraries
+2025-03-11 18:30:11,951:INFO:Set up data.
+2025-03-11 18:30:11,953:INFO:Set up index.
+2025-03-11 18:30:12,123:INFO:Initializing predict_model()
+2025-03-11 18:30:12,123:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:12,123:INFO:Checking exceptions
+2025-03-11 18:30:12,123:INFO:Preloading libraries
+2025-03-11 18:30:12,124:INFO:Set up data.
+2025-03-11 18:30:12,127:INFO:Set up index.
+2025-03-11 18:30:12,280:INFO:Initializing predict_model()
+2025-03-11 18:30:12,280:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:12,280:INFO:Checking exceptions
+2025-03-11 18:30:12,281:INFO:Preloading libraries
+2025-03-11 18:30:12,282:INFO:Set up data.
+2025-03-11 18:30:12,285:INFO:Set up index.
+2025-03-11 18:30:12,446:INFO:Initializing predict_model()
+2025-03-11 18:30:12,446:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:12,447:INFO:Checking exceptions
+2025-03-11 18:30:12,447:INFO:Preloading libraries
+2025-03-11 18:30:12,449:INFO:Set up data.
+2025-03-11 18:30:12,451:INFO:Set up index.
+2025-03-11 18:30:12,610:INFO:Initializing predict_model()
+2025-03-11 18:30:12,610:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:12,610:INFO:Checking exceptions
+2025-03-11 18:30:12,610:INFO:Preloading libraries
+2025-03-11 18:30:12,611:INFO:Set up data.
+2025-03-11 18:30:12,613:INFO:Set up index.
+2025-03-11 18:30:12,781:INFO:Initializing predict_model()
+2025-03-11 18:30:12,781:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:12,781:INFO:Checking exceptions
+2025-03-11 18:30:12,781:INFO:Preloading libraries
+2025-03-11 18:30:12,783:INFO:Set up data.
+2025-03-11 18:30:12,785:INFO:Set up index.
+2025-03-11 18:30:12,949:INFO:Initializing predict_model()
+2025-03-11 18:30:12,949:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:12,949:INFO:Checking exceptions
+2025-03-11 18:30:12,949:INFO:Preloading libraries
+2025-03-11 18:30:12,950:INFO:Set up data.
+2025-03-11 18:30:12,953:INFO:Set up index.
+2025-03-11 18:30:13,115:INFO:Initializing predict_model()
+2025-03-11 18:30:13,115:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:13,116:INFO:Checking exceptions
+2025-03-11 18:30:13,116:INFO:Preloading libraries
+2025-03-11 18:30:13,117:INFO:Set up data.
+2025-03-11 18:30:13,119:INFO:Set up index.
+2025-03-11 18:30:13,286:INFO:Initializing predict_model()
+2025-03-11 18:30:13,286:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:13,286:INFO:Checking exceptions
+2025-03-11 18:30:13,286:INFO:Preloading libraries
+2025-03-11 18:30:13,289:INFO:Set up data.
+2025-03-11 18:30:13,291:INFO:Set up index.
+2025-03-11 18:30:13,455:INFO:Initializing predict_model()
+2025-03-11 18:30:13,455:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:13,456:INFO:Checking exceptions
+2025-03-11 18:30:13,456:INFO:Preloading libraries
+2025-03-11 18:30:13,457:INFO:Set up data.
+2025-03-11 18:30:13,460:INFO:Set up index.
+2025-03-11 18:30:13,623:INFO:Initializing predict_model()
+2025-03-11 18:30:13,623:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:13,623:INFO:Checking exceptions
+2025-03-11 18:30:13,623:INFO:Preloading libraries
+2025-03-11 18:30:13,625:INFO:Set up data.
+2025-03-11 18:30:13,626:INFO:Set up index.
+2025-03-11 18:30:13,793:INFO:Initializing predict_model()
+2025-03-11 18:30:13,793:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:13,793:INFO:Checking exceptions
+2025-03-11 18:30:13,793:INFO:Preloading libraries
+2025-03-11 18:30:13,795:INFO:Set up data.
+2025-03-11 18:30:13,797:INFO:Set up index.
+2025-03-11 18:30:13,958:INFO:Initializing predict_model()
+2025-03-11 18:30:13,958:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:13,958:INFO:Checking exceptions
+2025-03-11 18:30:13,958:INFO:Preloading libraries
+2025-03-11 18:30:13,959:INFO:Set up data.
+2025-03-11 18:30:13,962:INFO:Set up index.
+2025-03-11 18:30:14,129:INFO:Initializing predict_model()
+2025-03-11 18:30:14,129:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:14,129:INFO:Checking exceptions
+2025-03-11 18:30:14,129:INFO:Preloading libraries
+2025-03-11 18:30:14,131:INFO:Set up data.
+2025-03-11 18:30:14,133:INFO:Set up index.
+2025-03-11 18:30:14,292:INFO:Initializing predict_model()
+2025-03-11 18:30:14,292:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:14,292:INFO:Checking exceptions
+2025-03-11 18:30:14,292:INFO:Preloading libraries
+2025-03-11 18:30:14,294:INFO:Set up data.
+2025-03-11 18:30:14,296:INFO:Set up index.
+2025-03-11 18:30:14,457:INFO:Initializing predict_model()
+2025-03-11 18:30:14,457:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:14,457:INFO:Checking exceptions
+2025-03-11 18:30:14,457:INFO:Preloading libraries
+2025-03-11 18:30:14,459:INFO:Set up data.
+2025-03-11 18:30:14,461:INFO:Set up index.
+2025-03-11 18:30:14,643:INFO:Initializing predict_model()
+2025-03-11 18:30:14,643:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:14,644:INFO:Checking exceptions
+2025-03-11 18:30:14,644:INFO:Preloading libraries
+2025-03-11 18:30:14,646:INFO:Set up data.
+2025-03-11 18:30:14,648:INFO:Set up index.
+2025-03-11 18:30:14,806:INFO:Initializing predict_model()
+2025-03-11 18:30:14,806:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:14,806:INFO:Checking exceptions
+2025-03-11 18:30:14,807:INFO:Preloading libraries
+2025-03-11 18:30:14,807:INFO:Set up data.
+2025-03-11 18:30:14,810:INFO:Set up index.
+2025-03-11 18:30:14,974:INFO:Initializing predict_model()
+2025-03-11 18:30:14,974:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:14,974:INFO:Checking exceptions
+2025-03-11 18:30:14,974:INFO:Preloading libraries
+2025-03-11 18:30:14,976:INFO:Set up data.
+2025-03-11 18:30:14,979:INFO:Set up index.
+2025-03-11 18:30:15,141:INFO:Initializing predict_model()
+2025-03-11 18:30:15,141:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:15,142:INFO:Checking exceptions
+2025-03-11 18:30:15,142:INFO:Preloading libraries
+2025-03-11 18:30:15,143:INFO:Set up data.
+2025-03-11 18:30:15,146:INFO:Set up index.
+2025-03-11 18:30:15,314:INFO:Initializing predict_model()
+2025-03-11 18:30:15,314:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:15,314:INFO:Checking exceptions
+2025-03-11 18:30:15,314:INFO:Preloading libraries
+2025-03-11 18:30:15,316:INFO:Set up data.
+2025-03-11 18:30:15,318:INFO:Set up index.
+2025-03-11 18:30:15,529:INFO:Initializing predict_model()
+2025-03-11 18:30:15,529:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:15,530:INFO:Checking exceptions
+2025-03-11 18:30:15,530:INFO:Preloading libraries
+2025-03-11 18:30:15,532:INFO:Set up data.
+2025-03-11 18:30:15,536:INFO:Set up index.
+2025-03-11 18:30:15,787:INFO:Initializing predict_model()
+2025-03-11 18:30:15,787:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:15,787:INFO:Checking exceptions
+2025-03-11 18:30:15,787:INFO:Preloading libraries
+2025-03-11 18:30:15,790:INFO:Set up data.
+2025-03-11 18:30:15,793:INFO:Set up index.
+2025-03-11 18:30:16,027:INFO:Initializing predict_model()
+2025-03-11 18:30:16,027:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:16,027:INFO:Checking exceptions
+2025-03-11 18:30:16,027:INFO:Preloading libraries
+2025-03-11 18:30:16,030:INFO:Set up data.
+2025-03-11 18:30:16,034:INFO:Set up index.
+2025-03-11 18:30:16,272:INFO:Initializing predict_model()
+2025-03-11 18:30:16,272:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:16,272:INFO:Checking exceptions
+2025-03-11 18:30:16,272:INFO:Preloading libraries
+2025-03-11 18:30:16,275:INFO:Set up data.
+2025-03-11 18:30:16,277:INFO:Set up index.
+2025-03-11 18:30:16,506:INFO:Initializing predict_model()
+2025-03-11 18:30:16,506:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:16,506:INFO:Checking exceptions
+2025-03-11 18:30:16,506:INFO:Preloading libraries
+2025-03-11 18:30:16,509:INFO:Set up data.
+2025-03-11 18:30:16,512:INFO:Set up index.
+2025-03-11 18:30:16,744:INFO:Initializing predict_model()
+2025-03-11 18:30:16,744:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:16,744:INFO:Checking exceptions
+2025-03-11 18:30:16,744:INFO:Preloading libraries
+2025-03-11 18:30:16,747:INFO:Set up data.
+2025-03-11 18:30:16,750:INFO:Set up index.
+2025-03-11 18:30:16,991:INFO:Initializing predict_model()
+2025-03-11 18:30:16,991:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:16,991:INFO:Checking exceptions
+2025-03-11 18:30:16,991:INFO:Preloading libraries
+2025-03-11 18:30:16,993:INFO:Set up data.
+2025-03-11 18:30:16,998:INFO:Set up index.
+2025-03-11 18:30:17,227:INFO:Initializing predict_model()
+2025-03-11 18:30:17,227:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:17,227:INFO:Checking exceptions
+2025-03-11 18:30:17,227:INFO:Preloading libraries
+2025-03-11 18:30:17,229:INFO:Set up data.
+2025-03-11 18:30:17,231:INFO:Set up index.
+2025-03-11 18:30:17,449:INFO:Initializing predict_model()
+2025-03-11 18:30:17,449:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:17,449:INFO:Checking exceptions
+2025-03-11 18:30:17,449:INFO:Preloading libraries
+2025-03-11 18:30:17,452:INFO:Set up data.
+2025-03-11 18:30:17,454:INFO:Set up index.
+2025-03-11 18:30:17,620:INFO:Initializing predict_model()
+2025-03-11 18:30:17,620:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:17,620:INFO:Checking exceptions
+2025-03-11 18:30:17,621:INFO:Preloading libraries
+2025-03-11 18:30:17,622:INFO:Set up data.
+2025-03-11 18:30:17,625:INFO:Set up index.
+2025-03-11 18:30:17,798:INFO:Initializing predict_model()
+2025-03-11 18:30:17,799:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:17,799:INFO:Checking exceptions
+2025-03-11 18:30:17,799:INFO:Preloading libraries
+2025-03-11 18:30:17,800:INFO:Set up data.
+2025-03-11 18:30:17,803:INFO:Set up index.
+2025-03-11 18:30:17,984:INFO:Initializing predict_model()
+2025-03-11 18:30:17,984:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:17,984:INFO:Checking exceptions
+2025-03-11 18:30:17,984:INFO:Preloading libraries
+2025-03-11 18:30:17,987:INFO:Set up data.
+2025-03-11 18:30:17,988:INFO:Set up index.
+2025-03-11 18:30:18,154:INFO:Initializing predict_model()
+2025-03-11 18:30:18,154:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:18,155:INFO:Checking exceptions
+2025-03-11 18:30:18,155:INFO:Preloading libraries
+2025-03-11 18:30:18,156:INFO:Set up data.
+2025-03-11 18:30:18,158:INFO:Set up index.
+2025-03-11 18:30:18,331:INFO:Initializing predict_model()
+2025-03-11 18:30:18,331:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:18,331:INFO:Checking exceptions
+2025-03-11 18:30:18,331:INFO:Preloading libraries
+2025-03-11 18:30:18,332:INFO:Set up data.
+2025-03-11 18:30:18,336:INFO:Set up index.
+2025-03-11 18:30:18,506:INFO:Initializing predict_model()
+2025-03-11 18:30:18,506:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:18,506:INFO:Checking exceptions
+2025-03-11 18:30:18,506:INFO:Preloading libraries
+2025-03-11 18:30:18,507:INFO:Set up data.
+2025-03-11 18:30:18,510:INFO:Set up index.
+2025-03-11 18:30:18,684:INFO:Initializing predict_model()
+2025-03-11 18:30:18,684:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:18,684:INFO:Checking exceptions
+2025-03-11 18:30:18,684:INFO:Preloading libraries
+2025-03-11 18:30:18,686:INFO:Set up data.
+2025-03-11 18:30:18,688:INFO:Set up index.
+2025-03-11 18:30:18,855:INFO:Initializing predict_model()
+2025-03-11 18:30:18,856:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:18,856:INFO:Checking exceptions
+2025-03-11 18:30:18,856:INFO:Preloading libraries
+2025-03-11 18:30:18,857:INFO:Set up data.
+2025-03-11 18:30:18,860:INFO:Set up index.
+2025-03-11 18:30:19,025:INFO:Initializing predict_model()
+2025-03-11 18:30:19,025:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:19,025:INFO:Checking exceptions
+2025-03-11 18:30:19,025:INFO:Preloading libraries
+2025-03-11 18:30:19,027:INFO:Set up data.
+2025-03-11 18:30:19,030:INFO:Set up index.
+2025-03-11 18:30:19,191:INFO:Initializing predict_model()
+2025-03-11 18:30:19,192:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:19,192:INFO:Checking exceptions
+2025-03-11 18:30:19,192:INFO:Preloading libraries
+2025-03-11 18:30:19,193:INFO:Set up data.
+2025-03-11 18:30:19,195:INFO:Set up index.
+2025-03-11 18:30:19,358:INFO:Initializing predict_model()
+2025-03-11 18:30:19,358:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:19,358:INFO:Checking exceptions
+2025-03-11 18:30:19,358:INFO:Preloading libraries
+2025-03-11 18:30:19,360:INFO:Set up data.
+2025-03-11 18:30:19,363:INFO:Set up index.
+2025-03-11 18:30:19,549:INFO:Initializing predict_model()
+2025-03-11 18:30:19,549:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:19,549:INFO:Checking exceptions
+2025-03-11 18:30:19,549:INFO:Preloading libraries
+2025-03-11 18:30:19,551:INFO:Set up data.
+2025-03-11 18:30:19,554:INFO:Set up index.
+2025-03-11 18:30:19,722:INFO:Initializing predict_model()
+2025-03-11 18:30:19,722:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:19,722:INFO:Checking exceptions
+2025-03-11 18:30:19,722:INFO:Preloading libraries
+2025-03-11 18:30:19,724:INFO:Set up data.
+2025-03-11 18:30:19,727:INFO:Set up index.
+2025-03-11 18:30:19,893:INFO:Initializing predict_model()
+2025-03-11 18:30:19,893:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:19,894:INFO:Checking exceptions
+2025-03-11 18:30:19,894:INFO:Preloading libraries
+2025-03-11 18:30:19,895:INFO:Set up data.
+2025-03-11 18:30:19,898:INFO:Set up index.
+2025-03-11 18:30:20,073:INFO:Initializing predict_model()
+2025-03-11 18:30:20,073:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:20,073:INFO:Checking exceptions
+2025-03-11 18:30:20,073:INFO:Preloading libraries
+2025-03-11 18:30:20,075:INFO:Set up data.
+2025-03-11 18:30:20,077:INFO:Set up index.
+2025-03-11 18:30:20,238:INFO:Initializing predict_model()
+2025-03-11 18:30:20,238:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:20,238:INFO:Checking exceptions
+2025-03-11 18:30:20,238:INFO:Preloading libraries
+2025-03-11 18:30:20,240:INFO:Set up data.
+2025-03-11 18:30:20,243:INFO:Set up index.
+2025-03-11 18:30:20,404:INFO:Initializing predict_model()
+2025-03-11 18:30:20,404:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:20,404:INFO:Checking exceptions
+2025-03-11 18:30:20,404:INFO:Preloading libraries
+2025-03-11 18:30:20,406:INFO:Set up data.
+2025-03-11 18:30:20,409:INFO:Set up index.
+2025-03-11 18:30:20,581:INFO:Initializing predict_model()
+2025-03-11 18:30:20,581:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:20,581:INFO:Checking exceptions
+2025-03-11 18:30:20,581:INFO:Preloading libraries
+2025-03-11 18:30:20,583:INFO:Set up data.
+2025-03-11 18:30:20,585:INFO:Set up index.
+2025-03-11 18:30:20,784:INFO:Initializing predict_model()
+2025-03-11 18:30:20,784:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:20,784:INFO:Checking exceptions
+2025-03-11 18:30:20,784:INFO:Preloading libraries
+2025-03-11 18:30:20,786:INFO:Set up data.
+2025-03-11 18:30:20,790:INFO:Set up index.
+2025-03-11 18:30:20,975:INFO:Initializing predict_model()
+2025-03-11 18:30:20,975:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:20,975:INFO:Checking exceptions
+2025-03-11 18:30:20,975:INFO:Preloading libraries
+2025-03-11 18:30:20,977:INFO:Set up data.
+2025-03-11 18:30:20,979:INFO:Set up index.
+2025-03-11 18:30:21,153:INFO:Initializing predict_model()
+2025-03-11 18:30:21,153:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:21,153:INFO:Checking exceptions
+2025-03-11 18:30:21,153:INFO:Preloading libraries
+2025-03-11 18:30:21,155:INFO:Set up data.
+2025-03-11 18:30:21,158:INFO:Set up index.
+2025-03-11 18:30:21,347:INFO:Initializing predict_model()
+2025-03-11 18:30:21,347:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:21,347:INFO:Checking exceptions
+2025-03-11 18:30:21,347:INFO:Preloading libraries
+2025-03-11 18:30:21,348:INFO:Set up data.
+2025-03-11 18:30:21,352:INFO:Set up index.
+2025-03-11 18:30:21,547:INFO:Initializing predict_model()
+2025-03-11 18:30:21,548:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:21,548:INFO:Checking exceptions
+2025-03-11 18:30:21,548:INFO:Preloading libraries
+2025-03-11 18:30:21,549:INFO:Set up data.
+2025-03-11 18:30:21,551:INFO:Set up index.
+2025-03-11 18:30:21,740:INFO:Initializing predict_model()
+2025-03-11 18:30:21,740:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:21,740:INFO:Checking exceptions
+2025-03-11 18:30:21,740:INFO:Preloading libraries
+2025-03-11 18:30:21,741:INFO:Set up data.
+2025-03-11 18:30:21,743:INFO:Set up index.
+2025-03-11 18:30:21,932:INFO:Initializing predict_model()
+2025-03-11 18:30:21,932:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:21,932:INFO:Checking exceptions
+2025-03-11 18:30:21,933:INFO:Preloading libraries
+2025-03-11 18:30:21,935:INFO:Set up data.
+2025-03-11 18:30:21,938:INFO:Set up index.
+2025-03-11 18:30:22,118:INFO:Initializing predict_model()
+2025-03-11 18:30:22,118:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:22,118:INFO:Checking exceptions
+2025-03-11 18:30:22,118:INFO:Preloading libraries
+2025-03-11 18:30:22,120:INFO:Set up data.
+2025-03-11 18:30:22,123:INFO:Set up index.
+2025-03-11 18:30:22,314:INFO:Initializing predict_model()
+2025-03-11 18:30:22,314:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:22,314:INFO:Checking exceptions
+2025-03-11 18:30:22,314:INFO:Preloading libraries
+2025-03-11 18:30:22,315:INFO:Set up data.
+2025-03-11 18:30:22,318:INFO:Set up index.
+2025-03-11 18:30:22,514:INFO:Initializing predict_model()
+2025-03-11 18:30:22,514:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:22,514:INFO:Checking exceptions
+2025-03-11 18:30:22,514:INFO:Preloading libraries
+2025-03-11 18:30:22,516:INFO:Set up data.
+2025-03-11 18:30:22,519:INFO:Set up index.
+2025-03-11 18:30:22,704:INFO:Initializing predict_model()
+2025-03-11 18:30:22,704:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:22,704:INFO:Checking exceptions
+2025-03-11 18:30:22,704:INFO:Preloading libraries
+2025-03-11 18:30:22,706:INFO:Set up data.
+2025-03-11 18:30:22,708:INFO:Set up index.
+2025-03-11 18:30:22,882:INFO:Initializing predict_model()
+2025-03-11 18:30:22,882:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:22,882:INFO:Checking exceptions
+2025-03-11 18:30:22,882:INFO:Preloading libraries
+2025-03-11 18:30:22,884:INFO:Set up data.
+2025-03-11 18:30:22,886:INFO:Set up index.
+2025-03-11 18:30:23,070:INFO:Initializing predict_model()
+2025-03-11 18:30:23,070:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:23,070:INFO:Checking exceptions
+2025-03-11 18:30:23,070:INFO:Preloading libraries
+2025-03-11 18:30:23,072:INFO:Set up data.
+2025-03-11 18:30:23,074:INFO:Set up index.
+2025-03-11 18:30:23,256:INFO:Initializing predict_model()
+2025-03-11 18:30:23,256:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:23,256:INFO:Checking exceptions
+2025-03-11 18:30:23,256:INFO:Preloading libraries
+2025-03-11 18:30:23,257:INFO:Set up data.
+2025-03-11 18:30:23,259:INFO:Set up index.
+2025-03-11 18:30:23,447:INFO:Initializing predict_model()
+2025-03-11 18:30:23,448:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:23,448:INFO:Checking exceptions
+2025-03-11 18:30:23,448:INFO:Preloading libraries
+2025-03-11 18:30:23,450:INFO:Set up data.
+2025-03-11 18:30:23,453:INFO:Set up index.
+2025-03-11 18:30:23,625:INFO:Initializing predict_model()
+2025-03-11 18:30:23,626:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:23,626:INFO:Checking exceptions
+2025-03-11 18:30:23,626:INFO:Preloading libraries
+2025-03-11 18:30:23,628:INFO:Set up data.
+2025-03-11 18:30:23,631:INFO:Set up index.
+2025-03-11 18:30:23,828:INFO:Initializing predict_model()
+2025-03-11 18:30:23,828:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:23,828:INFO:Checking exceptions
+2025-03-11 18:30:23,828:INFO:Preloading libraries
+2025-03-11 18:30:23,830:INFO:Set up data.
+2025-03-11 18:30:23,833:INFO:Set up index.
+2025-03-11 18:30:24,006:INFO:Initializing predict_model()
+2025-03-11 18:30:24,006:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:24,006:INFO:Checking exceptions
+2025-03-11 18:30:24,006:INFO:Preloading libraries
+2025-03-11 18:30:24,008:INFO:Set up data.
+2025-03-11 18:30:24,010:INFO:Set up index.
+2025-03-11 18:30:24,183:INFO:Initializing predict_model()
+2025-03-11 18:30:24,183:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:24,183:INFO:Checking exceptions
+2025-03-11 18:30:24,183:INFO:Preloading libraries
+2025-03-11 18:30:24,185:INFO:Set up data.
+2025-03-11 18:30:24,188:INFO:Set up index.
+2025-03-11 18:30:24,358:INFO:Initializing predict_model()
+2025-03-11 18:30:24,358:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:24,358:INFO:Checking exceptions
+2025-03-11 18:30:24,358:INFO:Preloading libraries
+2025-03-11 18:30:24,359:INFO:Set up data.
+2025-03-11 18:30:24,363:INFO:Set up index.
+2025-03-11 18:30:24,539:INFO:Initializing predict_model()
+2025-03-11 18:30:24,539:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:24,539:INFO:Checking exceptions
+2025-03-11 18:30:24,539:INFO:Preloading libraries
+2025-03-11 18:30:24,541:INFO:Set up data.
+2025-03-11 18:30:24,543:INFO:Set up index.
+2025-03-11 18:30:24,726:INFO:Initializing predict_model()
+2025-03-11 18:30:24,726:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:24,726:INFO:Checking exceptions
+2025-03-11 18:30:24,726:INFO:Preloading libraries
+2025-03-11 18:30:24,728:INFO:Set up data.
+2025-03-11 18:30:24,731:INFO:Set up index.
+2025-03-11 18:30:24,915:INFO:Initializing predict_model()
+2025-03-11 18:30:24,915:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:24,915:INFO:Checking exceptions
+2025-03-11 18:30:24,915:INFO:Preloading libraries
+2025-03-11 18:30:24,917:INFO:Set up data.
+2025-03-11 18:30:24,919:INFO:Set up index.
+2025-03-11 18:30:25,103:INFO:Initializing predict_model()
+2025-03-11 18:30:25,103:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:25,103:INFO:Checking exceptions
+2025-03-11 18:30:25,103:INFO:Preloading libraries
+2025-03-11 18:30:25,106:INFO:Set up data.
+2025-03-11 18:30:25,108:INFO:Set up index.
+2025-03-11 18:30:25,288:INFO:Initializing predict_model()
+2025-03-11 18:30:25,289:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:25,289:INFO:Checking exceptions
+2025-03-11 18:30:25,289:INFO:Preloading libraries
+2025-03-11 18:30:25,290:INFO:Set up data.
+2025-03-11 18:30:25,293:INFO:Set up index.
+2025-03-11 18:30:25,471:INFO:Initializing predict_model()
+2025-03-11 18:30:25,471:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:25,471:INFO:Checking exceptions
+2025-03-11 18:30:25,471:INFO:Preloading libraries
+2025-03-11 18:30:25,473:INFO:Set up data.
+2025-03-11 18:30:25,475:INFO:Set up index.
+2025-03-11 18:30:25,650:INFO:Initializing predict_model()
+2025-03-11 18:30:25,650:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:25,650:INFO:Checking exceptions
+2025-03-11 18:30:25,650:INFO:Preloading libraries
+2025-03-11 18:30:25,651:INFO:Set up data.
+2025-03-11 18:30:25,654:INFO:Set up index.
+2025-03-11 18:30:25,829:INFO:Initializing predict_model()
+2025-03-11 18:30:25,829:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:25,829:INFO:Checking exceptions
+2025-03-11 18:30:25,829:INFO:Preloading libraries
+2025-03-11 18:30:25,832:INFO:Set up data.
+2025-03-11 18:30:25,834:INFO:Set up index.
+2025-03-11 18:30:26,007:INFO:Initializing predict_model()
+2025-03-11 18:30:26,008:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:26,008:INFO:Checking exceptions
+2025-03-11 18:30:26,008:INFO:Preloading libraries
+2025-03-11 18:30:26,009:INFO:Set up data.
+2025-03-11 18:30:26,012:INFO:Set up index.
+2025-03-11 18:30:26,186:INFO:Initializing predict_model()
+2025-03-11 18:30:26,186:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:26,186:INFO:Checking exceptions
+2025-03-11 18:30:26,186:INFO:Preloading libraries
+2025-03-11 18:30:26,188:INFO:Set up data.
+2025-03-11 18:30:26,191:INFO:Set up index.
+2025-03-11 18:30:26,366:INFO:Initializing predict_model()
+2025-03-11 18:30:26,366:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:26,366:INFO:Checking exceptions
+2025-03-11 18:30:26,366:INFO:Preloading libraries
+2025-03-11 18:30:26,368:INFO:Set up data.
+2025-03-11 18:30:26,370:INFO:Set up index.
+2025-03-11 18:30:26,547:INFO:Initializing predict_model()
+2025-03-11 18:30:26,547:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:26,547:INFO:Checking exceptions
+2025-03-11 18:30:26,547:INFO:Preloading libraries
+2025-03-11 18:30:26,549:INFO:Set up data.
+2025-03-11 18:30:26,551:INFO:Set up index.
+2025-03-11 18:30:26,748:INFO:Initializing predict_model()
+2025-03-11 18:30:26,748:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:26,749:INFO:Checking exceptions
+2025-03-11 18:30:26,749:INFO:Preloading libraries
+2025-03-11 18:30:26,750:INFO:Set up data.
+2025-03-11 18:30:26,753:INFO:Set up index.
+2025-03-11 18:30:26,945:INFO:Initializing predict_model()
+2025-03-11 18:30:26,945:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:26,945:INFO:Checking exceptions
+2025-03-11 18:30:26,945:INFO:Preloading libraries
+2025-03-11 18:30:26,946:INFO:Set up data.
+2025-03-11 18:30:26,950:INFO:Set up index.
+2025-03-11 18:30:27,132:INFO:Initializing predict_model()
+2025-03-11 18:30:27,132:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:27,133:INFO:Checking exceptions
+2025-03-11 18:30:27,133:INFO:Preloading libraries
+2025-03-11 18:30:27,134:INFO:Set up data.
+2025-03-11 18:30:27,137:INFO:Set up index.
+2025-03-11 18:30:27,306:INFO:Initializing predict_model()
+2025-03-11 18:30:27,306:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:27,306:INFO:Checking exceptions
+2025-03-11 18:30:27,306:INFO:Preloading libraries
+2025-03-11 18:30:27,307:INFO:Set up data.
+2025-03-11 18:30:27,309:INFO:Set up index.
+2025-03-11 18:30:27,488:INFO:Initializing predict_model()
+2025-03-11 18:30:27,489:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:27,489:INFO:Checking exceptions
+2025-03-11 18:30:27,489:INFO:Preloading libraries
+2025-03-11 18:30:27,490:INFO:Set up data.
+2025-03-11 18:30:27,493:INFO:Set up index.
+2025-03-11 18:30:27,660:INFO:Initializing predict_model()
+2025-03-11 18:30:27,661:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:27,661:INFO:Checking exceptions
+2025-03-11 18:30:27,661:INFO:Preloading libraries
+2025-03-11 18:30:27,662:INFO:Set up data.
+2025-03-11 18:30:27,664:INFO:Set up index.
+2025-03-11 18:30:27,833:INFO:Initializing predict_model()
+2025-03-11 18:30:27,834:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:27,834:INFO:Checking exceptions
+2025-03-11 18:30:27,834:INFO:Preloading libraries
+2025-03-11 18:30:27,835:INFO:Set up data.
+2025-03-11 18:30:27,837:INFO:Set up index.
+2025-03-11 18:30:28,008:INFO:Initializing predict_model()
+2025-03-11 18:30:28,008:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:28,008:INFO:Checking exceptions
+2025-03-11 18:30:28,008:INFO:Preloading libraries
+2025-03-11 18:30:28,010:INFO:Set up data.
+2025-03-11 18:30:28,012:INFO:Set up index.
+2025-03-11 18:30:28,189:INFO:Initializing predict_model()
+2025-03-11 18:30:28,190:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:28,190:INFO:Checking exceptions
+2025-03-11 18:30:28,190:INFO:Preloading libraries
+2025-03-11 18:30:28,192:INFO:Set up data.
+2025-03-11 18:30:28,194:INFO:Set up index.
+2025-03-11 18:30:28,365:INFO:Initializing predict_model()
+2025-03-11 18:30:28,365:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:28,365:INFO:Checking exceptions
+2025-03-11 18:30:28,365:INFO:Preloading libraries
+2025-03-11 18:30:28,367:INFO:Set up data.
+2025-03-11 18:30:28,371:INFO:Set up index.
+2025-03-11 18:30:28,567:INFO:Initializing predict_model()
+2025-03-11 18:30:28,567:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:28,567:INFO:Checking exceptions
+2025-03-11 18:30:28,567:INFO:Preloading libraries
+2025-03-11 18:30:28,570:INFO:Set up data.
+2025-03-11 18:30:28,572:INFO:Set up index.
+2025-03-11 18:30:28,745:INFO:Initializing predict_model()
+2025-03-11 18:30:28,746:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:28,746:INFO:Checking exceptions
+2025-03-11 18:30:28,746:INFO:Preloading libraries
+2025-03-11 18:30:28,747:INFO:Set up data.
+2025-03-11 18:30:28,750:INFO:Set up index.
+2025-03-11 18:30:28,920:INFO:Initializing predict_model()
+2025-03-11 18:30:28,920:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:28,920:INFO:Checking exceptions
+2025-03-11 18:30:28,920:INFO:Preloading libraries
+2025-03-11 18:30:28,922:INFO:Set up data.
+2025-03-11 18:30:28,924:INFO:Set up index.
+2025-03-11 18:30:29,102:INFO:Initializing predict_model()
+2025-03-11 18:30:29,102:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:29,102:INFO:Checking exceptions
+2025-03-11 18:30:29,102:INFO:Preloading libraries
+2025-03-11 18:30:29,104:INFO:Set up data.
+2025-03-11 18:30:29,106:INFO:Set up index.
+2025-03-11 18:30:29,277:INFO:Initializing predict_model()
+2025-03-11 18:30:29,277:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:29,277:INFO:Checking exceptions
+2025-03-11 18:30:29,277:INFO:Preloading libraries
+2025-03-11 18:30:29,280:INFO:Set up data.
+2025-03-11 18:30:29,282:INFO:Set up index.
+2025-03-11 18:30:29,456:INFO:Initializing predict_model()
+2025-03-11 18:30:29,457:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:29,457:INFO:Checking exceptions
+2025-03-11 18:30:29,457:INFO:Preloading libraries
+2025-03-11 18:30:29,459:INFO:Set up data.
+2025-03-11 18:30:29,461:INFO:Set up index.
+2025-03-11 18:30:29,641:INFO:Initializing predict_model()
+2025-03-11 18:30:29,641:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:29,641:INFO:Checking exceptions
+2025-03-11 18:30:29,641:INFO:Preloading libraries
+2025-03-11 18:30:29,643:INFO:Set up data.
+2025-03-11 18:30:29,645:INFO:Set up index.
+2025-03-11 18:30:29,820:INFO:Initializing predict_model()
+2025-03-11 18:30:29,820:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:29,820:INFO:Checking exceptions
+2025-03-11 18:30:29,820:INFO:Preloading libraries
+2025-03-11 18:30:29,822:INFO:Set up data.
+2025-03-11 18:30:29,825:INFO:Set up index.
+2025-03-11 18:30:29,996:INFO:Initializing predict_model()
+2025-03-11 18:30:29,996:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:29,996:INFO:Checking exceptions
+2025-03-11 18:30:29,996:INFO:Preloading libraries
+2025-03-11 18:30:29,998:INFO:Set up data.
+2025-03-11 18:30:30,000:INFO:Set up index.
+2025-03-11 18:30:30,177:INFO:Initializing predict_model()
+2025-03-11 18:30:30,178:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:30,178:INFO:Checking exceptions
+2025-03-11 18:30:30,178:INFO:Preloading libraries
+2025-03-11 18:30:30,179:INFO:Set up data.
+2025-03-11 18:30:30,181:INFO:Set up index.
+2025-03-11 18:30:30,360:INFO:Initializing predict_model()
+2025-03-11 18:30:30,360:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:30,360:INFO:Checking exceptions
+2025-03-11 18:30:30,360:INFO:Preloading libraries
+2025-03-11 18:30:30,361:INFO:Set up data.
+2025-03-11 18:30:30,365:INFO:Set up index.
+2025-03-11 18:30:30,539:INFO:Initializing predict_model()
+2025-03-11 18:30:30,539:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:30,539:INFO:Checking exceptions
+2025-03-11 18:30:30,539:INFO:Preloading libraries
+2025-03-11 18:30:30,540:INFO:Set up data.
+2025-03-11 18:30:30,543:INFO:Set up index.
+2025-03-11 18:30:30,724:INFO:Initializing predict_model()
+2025-03-11 18:30:30,724:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:30,725:INFO:Checking exceptions
+2025-03-11 18:30:30,725:INFO:Preloading libraries
+2025-03-11 18:30:30,726:INFO:Set up data.
+2025-03-11 18:30:30,729:INFO:Set up index.
+2025-03-11 18:30:30,903:INFO:Initializing predict_model()
+2025-03-11 18:30:30,903:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:30,903:INFO:Checking exceptions
+2025-03-11 18:30:30,903:INFO:Preloading libraries
+2025-03-11 18:30:30,905:INFO:Set up data.
+2025-03-11 18:30:30,907:INFO:Set up index.
+2025-03-11 18:30:31,075:INFO:Initializing predict_model()
+2025-03-11 18:30:31,075:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:31,076:INFO:Checking exceptions
+2025-03-11 18:30:31,076:INFO:Preloading libraries
+2025-03-11 18:30:31,077:INFO:Set up data.
+2025-03-11 18:30:31,080:INFO:Set up index.
+2025-03-11 18:30:31,251:INFO:Initializing predict_model()
+2025-03-11 18:30:31,252:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:31,252:INFO:Checking exceptions
+2025-03-11 18:30:31,252:INFO:Preloading libraries
+2025-03-11 18:30:31,253:INFO:Set up data.
+2025-03-11 18:30:31,256:INFO:Set up index.
+2025-03-11 18:30:31,424:INFO:Initializing predict_model()
+2025-03-11 18:30:31,424:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:31,424:INFO:Checking exceptions
+2025-03-11 18:30:31,424:INFO:Preloading libraries
+2025-03-11 18:30:31,426:INFO:Set up data.
+2025-03-11 18:30:31,428:INFO:Set up index.
+2025-03-11 18:30:31,604:INFO:Initializing predict_model()
+2025-03-11 18:30:31,604:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:31,604:INFO:Checking exceptions
+2025-03-11 18:30:31,604:INFO:Preloading libraries
+2025-03-11 18:30:31,607:INFO:Set up data.
+2025-03-11 18:30:31,608:INFO:Set up index.
+2025-03-11 18:30:31,785:INFO:Initializing predict_model()
+2025-03-11 18:30:31,785:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:31,785:INFO:Checking exceptions
+2025-03-11 18:30:31,785:INFO:Preloading libraries
+2025-03-11 18:30:31,787:INFO:Set up data.
+2025-03-11 18:30:31,788:INFO:Set up index.
+2025-03-11 18:30:31,980:INFO:Initializing predict_model()
+2025-03-11 18:30:31,980:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:31,980:INFO:Checking exceptions
+2025-03-11 18:30:31,980:INFO:Preloading libraries
+2025-03-11 18:30:31,982:INFO:Set up data.
+2025-03-11 18:30:31,984:INFO:Set up index.
+2025-03-11 18:30:32,150:INFO:Initializing predict_model()
+2025-03-11 18:30:32,150:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:32,150:INFO:Checking exceptions
+2025-03-11 18:30:32,150:INFO:Preloading libraries
+2025-03-11 18:30:32,152:INFO:Set up data.
+2025-03-11 18:30:32,154:INFO:Set up index.
+2025-03-11 18:30:32,325:INFO:Initializing predict_model()
+2025-03-11 18:30:32,325:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:32,325:INFO:Checking exceptions
+2025-03-11 18:30:32,325:INFO:Preloading libraries
+2025-03-11 18:30:32,327:INFO:Set up data.
+2025-03-11 18:30:32,329:INFO:Set up index.
+2025-03-11 18:30:32,500:INFO:Initializing predict_model()
+2025-03-11 18:30:32,500:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:32,500:INFO:Checking exceptions
+2025-03-11 18:30:32,500:INFO:Preloading libraries
+2025-03-11 18:30:32,502:INFO:Set up data.
+2025-03-11 18:30:32,504:INFO:Set up index.
+2025-03-11 18:30:32,674:INFO:Initializing predict_model()
+2025-03-11 18:30:32,674:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:32,674:INFO:Checking exceptions
+2025-03-11 18:30:32,674:INFO:Preloading libraries
+2025-03-11 18:30:32,675:INFO:Set up data.
+2025-03-11 18:30:32,678:INFO:Set up index.
+2025-03-11 18:30:32,856:INFO:Initializing predict_model()
+2025-03-11 18:30:32,856:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:32,856:INFO:Checking exceptions
+2025-03-11 18:30:32,856:INFO:Preloading libraries
+2025-03-11 18:30:32,858:INFO:Set up data.
+2025-03-11 18:30:32,860:INFO:Set up index.
+2025-03-11 18:30:33,037:INFO:Initializing predict_model()
+2025-03-11 18:30:33,037:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:33,037:INFO:Checking exceptions
+2025-03-11 18:30:33,037:INFO:Preloading libraries
+2025-03-11 18:30:33,039:INFO:Set up data.
+2025-03-11 18:30:33,042:INFO:Set up index.
+2025-03-11 18:30:33,212:INFO:Initializing predict_model()
+2025-03-11 18:30:33,212:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:33,212:INFO:Checking exceptions
+2025-03-11 18:30:33,212:INFO:Preloading libraries
+2025-03-11 18:30:33,214:INFO:Set up data.
+2025-03-11 18:30:33,216:INFO:Set up index.
+2025-03-11 18:30:33,392:INFO:Initializing predict_model()
+2025-03-11 18:30:33,392:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:33,392:INFO:Checking exceptions
+2025-03-11 18:30:33,392:INFO:Preloading libraries
+2025-03-11 18:30:33,394:INFO:Set up data.
+2025-03-11 18:30:33,398:INFO:Set up index.
+2025-03-11 18:30:33,572:INFO:Initializing predict_model()
+2025-03-11 18:30:33,573:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:33,573:INFO:Checking exceptions
+2025-03-11 18:30:33,573:INFO:Preloading libraries
+2025-03-11 18:30:33,574:INFO:Set up data.
+2025-03-11 18:30:33,577:INFO:Set up index.
+2025-03-11 18:30:33,745:INFO:Initializing predict_model()
+2025-03-11 18:30:33,745:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:33,745:INFO:Checking exceptions
+2025-03-11 18:30:33,745:INFO:Preloading libraries
+2025-03-11 18:30:33,746:INFO:Set up data.
+2025-03-11 18:30:33,749:INFO:Set up index.
+2025-03-11 18:30:33,922:INFO:Initializing predict_model()
+2025-03-11 18:30:33,922:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9692AC0>)
+2025-03-11 18:30:33,922:INFO:Checking exceptions
+2025-03-11 18:30:33,922:INFO:Preloading libraries
+2025-03-11 18:30:33,923:INFO:Set up data.
+2025-03-11 18:30:33,926:INFO:Set up index.
+2025-03-11 18:30:34,088:INFO:Initializing predict_model()
+2025-03-11 18:30:34,088:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016CFE8960D0>, estimator=RandomForestRegressor(n_jobs=-1, random_state=42), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016CB9690900>)
+2025-03-11 18:30:34,088:INFO:Checking exceptions
+2025-03-11 18:30:34,088:INFO:Preloading libraries
+2025-03-11 18:30:34,090:INFO:Set up data.
+2025-03-11 18:30:34,093:INFO:Set up index.
